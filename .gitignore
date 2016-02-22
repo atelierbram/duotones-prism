@@ -1,0 +1,6 @@
+.DS_Store
+.sass-cache
+
+src/inc/config.inc
+src/inc/config-external.inc
+src/inc/config-local.inc
