@@ -35,6 +35,7 @@
 .bg-baseD6 { background-color: $baseD6; color: adjust-color($baseD0, $lightness: -2.5%); }
 .bg-baseD7 { background-color: $baseD7; color: $baseD0; }
 
+
 // Webfont: Overpass-Light
 // https://github.com/RedHatBrand/overpass
 @font-face {
@@ -289,13 +290,13 @@ nav ul {
 }
 
 .bg-dark .nav-variation_list a {
-  background-color: $baseA1;
-  color: $baseA6;
-  border-top-color: $baseC3;
-  border-bottom-color: $baseC1;
+  background-color: $baseA2;
+  color: $baseD6;
+  border-top-color: adjust-color($baseA2, $lightness: -2.5%);
+  border-top-color: adjust-color($baseA2, $lightness: -2.5%);
 
   &:hover {
-    background-color: adjust-color($baseA1, $lightness: -2.5%);
+    background-color: adjust-color($baseA2, $lightness: -2.5%);
   }
 }
 
@@ -311,13 +312,15 @@ nav ul {
 }
 
 .bg-light .nav-variation_list a {
-  background-color: $baseC7;
-  color: $baseB3;
-  border-top-color: $baseC4;
+  background-color: $baseC2;
+  color: $baseB7;
+  // border-top-color: adjust-color($baseC2, $lightness: 5%);
+  // border-bottom-color: adjust-color($baseC2, $lightness: -5%);
+  border-top-color: $baseC1;
   border-bottom-color: $baseC1;
 
   &:hover {
-    background-color: adjust-color($baseC7, $lightness: -2.5%);
+    background-color: adjust-color($baseC2, $lightness: -2.5%);
   }
 
 }
@@ -352,8 +355,10 @@ nav ul {
 }
 
 .bg-dark .nav-variation_list .current a {
-  background-color: $baseA2;
-  color: $baseD6;
+  background-color: $baseA1;
+  color: $baseA6;
+  border-top-color: adjust-color($baseA1, $lightness: -2.5%);
+  border-bottom-color: adjust-color($baseA1, $lightness: 2.5%);
 
 }
 
@@ -365,11 +370,13 @@ nav ul {
 }
 
 .bg-light .nav-variation_list .current a {
-  background-color: $baseC2;
-  color: $baseB7;
+  background-color: $baseC7;
+  color: $baseB3;
+  // border-top-color: $baseC4;
+  // border-bottom-color: $baseC1;
+  border-top-color: adjust-color($baseC7, $lightness: -2.5%);
+  border-bottom-color: adjust-color($baseC7, $lightness: 2.5%);
 
-  border-top-color: adjust-color($baseA0, $lightness: -2.5%);
-  border-bottom-color: adjust-color($baseA0, $lightness: 2.5%);
 }
 
 .bg-light .nav-themes_list .current a {
@@ -421,13 +428,16 @@ nav ul {
 .nav_toggle .btn-text {
   display: inline-block;
   padding-left: 1.5em;
-  padding-right: .25em;
 }
 
 .nav_toggle-themes .btn-text {
   text-transform: capitalize;
+  padding-right: .25em;
 }
 
+.nav_toggle-variation .btn-text {
+  padding-right: 1.5em;
+}
 .nav_toggle-variation,
 .nav_toggle-variation .btn-text {
   @media(min-width: 640px) {
@@ -541,7 +551,7 @@ nav ul {
 
 .demo-tiles {
   overflow: hidden;
-  margin-bottom: 6em;
+  margin-bottom: 3em;
 }
 
 .demo-tiles.collapsed span {
@@ -574,17 +584,17 @@ nav ul {
 
 .demo-tiles-header {
   padding: 0 0 1em;
+  display: block;
 }
 
 .demo-tiles-header-text {
   display: block;
-  padding-top: 1em;
 
-  @media (min-width: 1150px) {
-    display: inline-block;
-    padding-top: 0.125rem;
-    padding-left: 1em;
-  }
+  // @media (min-width: 1150px) {
+  //   display: inline-block;
+  //   padding-top: 0.125rem;
+  //   padding-left: 1em;
+  // }
 
 }
 
@@ -600,14 +610,19 @@ nav ul {
   font-weight: normal;
 }
 
-.bg-dark .demo-tiles-header-text b {
+.bg-dark .demo-tiles-header-text .number-shades {
   color: $baseB7;
   letter-spacing: .5px;
   word-spacing: -.5px;
 }
 
-.bg-light .demo-tiles-header-text b {
-  color: adjust-color($baseD2,$lightness: -5%);
+.bg-light .demo-tiles-header-text .number-shades {
+  // color: adjust-color($baseC2,$lightness: -5%);
+  color: $baseC0;
+}
+
+.demo-tiles-header .button {
+  float: right;
 }
 
 h1 {
