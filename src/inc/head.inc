@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../../../output/prism/prism-duotones-<?php echo $theme; ?>-<?php echo $bg; ?>.css">
 <script><?php include "../../inc/head-detect-js.inc"; ?></script>
   </head>
-    <body>
+    <body class="theme-<?php echo $id; ?>">
 
     <?php ob_end_flush(); function compress_head($buffer) {
   $search = array("/>[[:space:]]+/", "/[[:space:]]+</");
