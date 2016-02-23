@@ -125,6 +125,26 @@ a {
   color: $baseB7;
 }
 
+.github-corner svg[style] {
+  fill: $baseA0 !important;
+}
+
+.bg-dark .github-corner svg[style] {
+  color: $baseA2 !important;
+}
+
+.bg-dark .github-corner:hover svg[style] {
+  color: $baseD3 !important;
+}
+
+.bg-light .github-corner svg[style] {
+  color: $baseC2 !important;
+}
+
+.bg-light .github-corner:hover svg[style] {
+  color: $baseD7 !important;
+}
+
 .bg-dark .header {
   background: $baseA2;
 }
@@ -735,6 +755,7 @@ button::-moz-focus-inner, input::-moz-focus-inner, button::-webkit-focus-inner, 
   background-color: transparentize($baseD3,.25);
   min-height: 300px;
 }
+
 
 @media (min-width:750px) {
 
