@@ -15,6 +15,8 @@ overwrite_to_file()
   base16-builder --scheme "db/schemes/duotones-forest.yml" --template "db/templates/prism/light.nunjucks" > "output/prism/prism-duotones-forest-light.css"
   base16-builder --scheme "db/schemes/duotones-earth.yml" --template "db/templates/prism/dark.nunjucks" > "output/prism/prism-duotones-earth-dark.css"
   base16-builder --scheme "db/schemes/duotones-earth.yml" --template "db/templates/prism/light.nunjucks" > "output/prism/prism-duotones-earth-light.css"
+  base16-builder --scheme "db/schemes/duotones-desert.yml" --template "db/templates/prism/dark.nunjucks" > "output/prism/prism-duotones-desert-dark.css"
+  base16-builder --scheme "db/schemes/duotones-desert.yml" --template "db/templates/prism/light.nunjucks" > "output/prism/prism-duotones-desert-light.css"
  }
 
 # execute it
