@@ -585,16 +585,11 @@ nav ul {
 .demo-tiles-header {
   padding: 0 0 1em;
   display: block;
+  overflow: auto;
 }
 
 .demo-tiles-header-text {
   display: block;
-
-  // @media (min-width: 1150px) {
-  //   display: inline-block;
-  //   padding-top: 0.125rem;
-  //   padding-left: 1em;
-  // }
 
 }
 
@@ -610,6 +605,13 @@ nav ul {
   font-weight: normal;
 }
 
+.demo-tiles-header-text .number-shades {
+  @media(max-width:650px) {
+    display: block;
+    clear: both;
+  }
+}
+
 .bg-dark .demo-tiles-header-text .number-shades {
   color: $baseB7;
   letter-spacing: .5px;
@@ -617,7 +619,6 @@ nav ul {
 }
 
 .bg-light .demo-tiles-header-text .number-shades {
-  // color: adjust-color($baseC2,$lightness: -5%);
   color: $baseC0;
 }
 
