@@ -1,1 +1,0 @@
-<div class="content has-themes-hidden" id="content"><h3 class="demo-tiles-header" id="demo-tilesHeader"><span class="demo-tiles-header-text" id="demo-tilesHeaderText" data-text-swap="show colornames">DuoTones <b class="number-shades" id="numberShades" data-text-swap="32 colornames" data-text-original='<?php echo $title; ?>'><?php echo $title; ?></b></span></h3>

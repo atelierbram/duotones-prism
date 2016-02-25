@@ -1,1 +1,0 @@
-<header class="header"><h1><a href="http://atelierbram.github.io/syntax-highlighting/duotones/">DuoTones - <span class="small"><?php echo $title; ?></span></a></h1><p>Based on <a href="http://simurai.com/projects/2016/01/01/duotone-themes">Duotone Themes</a> by <a href="http://simurai.com">Simurai</a> for Atom.</p></header>
